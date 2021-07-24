@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+import React, {useState} from 'react'
 import { useQuery } from "react-query";
 import '../App.css'
 
@@ -12,7 +12,6 @@ const ShoppingList = () => {
   }
   const { data, isLoading, error } = useQuery("shop", fetchShopping);
 
-  console.log(data && data.splice(0, 3));
 
 
   return (
@@ -26,12 +25,11 @@ const ShoppingList = () => {
           return (
             <>
               <div className="bg-white pb-4 rounded-lg">
-                  <div className='fruit-image bg-cover' style={{backgroundImage:`url(${thumbnailUrl})`}}></div>
+                  <div className='fruit-image bg-cover cursor:pointer' style={{backgroundImage:`url(${thumbnailUrl})`}}></div>
                   <div className="p-8">
                   <h1 className="text-3xl">{name}</h1>
                   <p className="text-2xl" style={{color:'#06AB0D',marginTop:"10px"}}>#{price}</p>
                   </div>
-                  
                 
               </div>
             </>
