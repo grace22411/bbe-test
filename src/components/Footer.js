@@ -41,15 +41,25 @@ const Footer = () => {
         Coming Soon On:
       </p> */}
       <div className=" flex justify-center items-center">
-        <img src={google} alt="" className="mr-4" />
+        <img src={google} alt="" className="middle mr-4" />
         <img src={apple} alt="" className="middle mr-4" />
-        <img src={blackbox} alt="" />
+        <img src={blackbox} alt="" className="middle"/>
       </div>
         <div className="pr-8  md:block hidden">
-          <Link to="/" className="p-4 font-medium">
-            Lawrence Price & Company
-          </Link>
+          <p>Follow us on social Media</p>
+            
         </div>
+      </div>
+
+      <div
+        className="flex justify-between h-36 border-t-2 border-black pt-4 px-20 mt-8 relative"
+        role="navigation"
+      >
+        <p className="font-medium text-left text-sm mb-0">
+        Copyright © 2021 BBeShop  App. All rights reserved.
+      </p>
+          <p>Nigeria</p>
+            
       </div>
     </div>
   );

@@ -27,15 +27,13 @@ const Hero = () => {
           your business.
         </p>
       </div>
-      <div className="grid grid-rows-3 grid-flow-col gap-0 px-20 my-20">
-        <img src={yellow} alt="" className="row-span-3 md:row-span-3" />
-
-        <img src={hat} alt="" className="row-span-1 col-span-2" />
-        <img
-          src={laughing}
-          alt=""
-          className="w-full row-span-2 col-span-2 -mt-16"
-        />
+      <div className="grid-show my-20">
+          <div className="people bg-cover" style={{backgroundImage:`url(${yellow})`}}></div>
+          <div className='two-people'>
+            <div className="people-second bg-cover" style={{backgroundImage:`url(${hat})`}}></div>
+            <div className="people-second bg-cover" style={{backgroundImage:`url(${laughing})`}}></div>
+          </div>
+        
       </div>
 
       <div className="bg-white flex flex-col justify-left items-center">
@@ -62,7 +60,7 @@ const Hero = () => {
         <p className="font-normal text-lg text-center">
           Be amongst the First to
           <br />
-          Get the News When we Launch!
+          Get the News When we Launch!🎉
         </p>
 
         {currentView === "email" ? (
@@ -79,7 +77,7 @@ const Hero = () => {
                   className="flex-shrink-0  text-sm border-none text-white py-1 px-2 rounded"
                   type="button"
                 >
-                  Sign Up
+                Join Waitlist
                 </button>
               </div>
             </form>
@@ -107,7 +105,7 @@ const Hero = () => {
                   className="flex-shrink-0 text-sm border-none text-white py-1 px-2 rounded"
                   type="button"
                 >
-                  Sign Up
+                  Join Waitlist
                 </button>
               </div>
             </form>

@@ -39,7 +39,7 @@ const Shop = () => {
         </div>
 
         <p className="font-normal text-lg text-center">
-        Our App is is beta and coming<br /> soon
+        Our App is is beta and coming<br /> soon🎉
         </p>
         </div>
     </>

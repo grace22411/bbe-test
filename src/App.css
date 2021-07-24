@@ -4,10 +4,11 @@
   margin:auto;
 }
 .waitingListContain .waiting-list{
-  height:55px;
-  width: 55px;
-  border:4px solid #fff;
-  left:-15px;
+  height:70px;
+  width: 70px;
+  border:1px solid #fff;
+  margin-left:-20px;
+  border-radius: 35px;
 }
 
 .input-box{
@@ -27,7 +28,7 @@
 }
 
 .middle{
-  width:156px;
+  width:auto;
   height:53px;
 }
 
@@ -37,4 +38,38 @@
   background-image: url('./images/hat.svg');
   height:460px;
   border-radius: 20px;;
+}
+
+.fruit-image{
+  width:100%;
+  height:200px;
+}
+
+.grid-show{
+  height:500px;
+  width:100%;
+  padding:0 100px;
+  display: flex;
+  
+}
+.grid-show .people{
+  height:inherit;
+  width:50%;
+}
+.grid-show .two-people{
+  height:inherit;
+  width:50%;
+}
+.grid-show .two-people .people-second{
+  height:250px;
+  width:100%;
+}
+@media only screen and (max-width:600px) {
+    .grid-show{
+      padding:0 30px;
+      flex-direction: column;
+    }
+    .grid-show .people,.two-people{
+      width:100%;
+    }
 }
