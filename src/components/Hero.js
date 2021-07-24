@@ -4,7 +4,6 @@ import laughing from "../images/laughing.svg";
 import hat from "../images/hat.svg";
 import { WaitingLists } from "../data/waitlist";
 import "../App.css";
-import Footer from "./Footer";
 
 const Hero = () => {
   const [currentView, setCurrentView] = useState("email");
